@@ -1,0 +1,28 @@
+---
+#
+# *_timelimit is in minutes
+#
+# The template dict/map/hash MUST NOT be used directly -- it exists ONLY to
+# provide yaml anchors internal to this file.
+#
+template:
+  datasets:
+    test_obs_lsst: &test_obs_lsst
+      display_name: testdata_obs_lsst
+      name: CI-obsLSST
+      github_repo: lsst-dm/testdata_obs_lsst
+      git_ref: master
+      clone_timelimit: 15
+  codes:
+    obs_lsst: &code_obs_lsst
+      name: obs_lsst
+      github_repo: lsst/obs_lsst
+      git_ref: master
+      clone_timelimit: 5
+obs_lsst:
+  defaults:
+    retries: 3
+  configs:
+    - dataset:
+        <<: *test_obs_lsst
+      run_timelimit: 150
