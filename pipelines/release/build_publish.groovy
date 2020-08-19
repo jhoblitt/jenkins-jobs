@@ -27,6 +27,9 @@ notify.wrap {
   String products   = params.PRODUCTS
   Boolean buildDocs = params.BUILD_DOCS
 
+  def canonical    = scipipe.canonical
+  def lsstswConfig = canonical.lsstsw_config
+
   def splenvRef = lsstswConfig.splenv_ref
   if (params.SPLENV_REF) {
     splenvRef = params.SPLENV_REF
