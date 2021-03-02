@@ -27,8 +27,8 @@ template:
       clone_timelimit: 60
   codes:
     validate_drp_gen3: &code_drp_gen3
-      name: metric-pipeline-tasks
-      github_repo: lsst-dmsst/metric-pipeline-tasks
+      name: faro
+      github_repo: lsst/faro
       git_ref: master
       clone_timelimit: 5
 validate_drp_gen3:
