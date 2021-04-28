@@ -99,9 +99,11 @@ scipipe-lsstsw-matrix:
     label: osx-10.13||osx-10.14
     display_name: macos
     display_compiler: clang
+    build_docs: true
 scipipe-lsstsw-lsst_distrib:
   - <<: *el7-conda
   - <<: *catalina-conda
+    build_docs: true
   - <<: *bigsur-conda
 scipipe-lsstsw-ci_hsc:
   - <<: *el7-conda
@@ -119,6 +121,7 @@ canonical:
     <<: *el7-conda
     label: snowflake-0
     display_name: centos-7
+    build_docs: true
   workspace: snowflake/release
 #
 # eups distrib tarball configuration -- used by

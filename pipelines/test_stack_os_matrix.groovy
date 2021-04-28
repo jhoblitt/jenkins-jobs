@@ -39,7 +39,7 @@ notify.wrap {
   if (params.RUBINENV_ORG_FORK != null) {
     buildParams['RUBINENV_ORG_FORK'] = params.RUBINENV_ORG_FORK
   }
-  if (params.RUBINENV_BRANCHi != null) {
+  if (params.RUBINENV_BRANCH != null) {
     buildParams['RUBINENV_BRANCH'] = params.RUBINENV_BRANCH
   }
 

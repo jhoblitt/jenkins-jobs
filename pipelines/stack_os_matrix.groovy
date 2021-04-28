@@ -23,6 +23,7 @@ notify.wrap {
     'BUILD_CONFIG',
     'PRODUCTS',
     'BUILD_DOCS',
+    'PUBLISH_DOCS',
     'WIPEOUT',
   ])
 
@@ -30,6 +31,7 @@ notify.wrap {
     LSST_REFS:      REFS,
     LSST_PRODUCTS:  PRODUCTS,
     LSST_BUILD_DOCS: BUILD_DOCS,
+    LSST_PUBLISH_DOCS: PUBLISH_DOCS,
   ]
 
   // override conda env ref from build_matrix.yaml

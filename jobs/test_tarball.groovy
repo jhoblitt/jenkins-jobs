@@ -20,7 +20,7 @@ p.pipeline().with {
     booleanParam('WIPEOUT', false, 'Completely wipe out workspace(s) before starting build.')
     stringParam('TIMEOUT', '8', 'build timeout in hours')
     stringParam('IMAGE', null, 'Pipeline base docker image (e.g. docker.io/lsstdm/scipipe-base:8 or empty for macOS)')
-    choiceParam('LABEL', ['centos-8-conda', 'centos-7-conda', 'osx-10.11', 'osx-10.12', 'osx-10.14'], 'Jenkins build agent label')
+    choiceParam('LABEL', ['centos-8-conda', 'centos-7-conda', 'osx-10.13', 'osx-10.14'], 'Jenkins build agent label')
     stringParam('COMPILER', 'conda-system', 'compiler version string')
     choiceParam('PYTHON_VERSION', ['3'], 'Python major version')
     stringParam('MINIVER', scipipe.template.tarball_defaults.miniver, 'Miniconda installer version')
