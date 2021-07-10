@@ -656,6 +656,7 @@ def void record(String buildDir, MinicondaEnv menv) {
   def archive = [
     '**/*.log',
     '**/*.failed',
+    '../../eupsbuild.log'
   ]
 
   def reports = [
